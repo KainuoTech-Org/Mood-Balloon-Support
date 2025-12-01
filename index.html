@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Balloon - Support & Help</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #FFF5F7 0%, #FFE8EC 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(255, 107, 157, 0.15);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #FF6B9D;
+        }
+
+        .app-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #FF6B9D;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #999;
+            font-size: 1.2em;
+        }
+
+        .lang-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .lang-btn {
+            padding: 10px 20px;
+            border: 2px solid #FF6B9D;
+            background: white;
+            color: #FF6B9D;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background: #FF6B9D;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .lang-btn.active {
+            background: #FF6B9D;
+            color: white;
+        }
+
+        .language-section {
+            display: none;
+        }
+
+        .language-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #FF6B9D;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #FF8AAE;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .faq-item {
+            background: #FFF5F7;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #FF6B9D;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #FF6B9D;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background: linear-gradient(135deg, #FF6B9D 0%, #FF8AAE 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+            margin-top: 15px;
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .link-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #FF6B9D;
+            border: 2px solid #FF6B9D;
+            transition: all 0.3s ease;
+        }
+
+        .link-card:hover {
+            background: #FF6B9D;
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(255, 107, 157, 0.3);
+        }
+
+        .link-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #FFE8EC;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">🎈</div>
+            <h1>Mood Balloon 心願球</h1>
+            <p class="subtitle">Technical Support 技術支持</p>
+            <div class="lang-nav">
+                <button class="lang-btn active" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" onclick="switchLang('zh-hant')">繁體中文</button>
+            </div>
+        </header>
+
+        <!-- English Version -->
+        <div id="en" class="language-section active">
+            <h2>Welcome to Mood Balloon</h2>
+            <p>Mood Balloon is an emotional wellness app designed to help you record, understand, and manage your emotions on your journey of self-discovery.</p>
+
+            <h2>📚 Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I delete my account?</div>
+                <p>Go to Settings > Account Management > Delete Account, then confirm to permanently delete all data. All information will be completely removed within 30 days.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is my data secure?</div>
+                <p>We use industry-standard encryption to protect your data and are fully compliant with GDPR/CCPA privacy regulations. Your emotional records and conversations are never sold or shared with third parties.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I use it offline?</div>
+                <p>Yes. Emotion tracking features work offline, with data stored on your device. AI conversation features require an internet connection.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I get started?</div>
+                <p>After downloading, you can tap "Guest Login" to start immediately, or register with your email to sync data across multiple devices.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Are the psychological assessments professional?</div>
+                <p>Yes. We use standardized assessment tools like PHQ-9 and GAD-7 based on clinical psychology research. However, results are for informational purposes only and cannot replace professional diagnosis.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How can I export my data?</div>
+                <p>You can currently view all historical records in the emotion calendar. Data export functionality will be available in future updates.</p>
+            </div>
+
+            <div class="links">
+                <a href="privacy.html" class="link-card">
+                    <div class="link-icon">🔒</div>
+                    <strong>Privacy Policy</strong>
+                </a>
+                <a href="terms.html" class="link-card">
+                    <div class="link-icon">📄</div>
+                    <strong>Terms of Service</strong>
+                </a>
+            </div>
+
+            <div class="contact">
+                <h2>📧 Contact Us</h2>
+                <p>For any questions or suggestions, please contact us:</p>
+                <div class="contact-info">
+                    <strong>Email:</strong> contact@kainuotech.com
+                </div>
+                <p style="margin-top: 15px; font-size: 0.9em;">We'll respond to your email within 24-48 hours</p>
+            </div>
+        </div>
+
+        <!-- Traditional Chinese Version -->
+        <div id="zh-hant" class="language-section">
+            <h2>歡迎使用心願球</h2>
+            <p>心願球是一款專注於情緒健康的應用程式，幫助您記錄、理解和管理情緒，開啟自我探索之旅。</p>
+
+            <h2>📚 常見問題</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">如何刪除帳號？</div>
+                <p>進入「設置」>「帳號管理」>「刪除帳號」，確認後即可永久刪除所有數據。所有資料將在30天內完全清除。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">數據是否安全？</div>
+                <p>我們使用業界標準加密保護您的數據，完全符合GDPR/CCPA隱私法規。您的情緒記錄和對話內容絕不會向第三方出售或分享。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">是否支持離線使用？</div>
+                <p>支持。情緒記錄功能可以離線使用，數據會儲存在您的設備上。AI對話功能需要網絡連接。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">如何開始使用？</div>
+                <p>下載後可以選擇「遊客登錄」立即體驗，或使用郵箱註冊帳號以便在多設備間同步數據。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">心理測評是專業的嗎？</div>
+                <p>是的。我們使用的PHQ-9、GAD-7等測評工具都是基於臨床心理學研究的標準化量表。但請注意，測評結果僅供參考，不能替代專業診斷。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">如何匯出我的數據？</div>
+                <p>目前可以在情緒日曆中查看所有歷史記錄。數據匯出功能將在未來版本中推出。</p>
+            </div>
+
+            <div class="links">
+                <a href="privacy.html" class="link-card">
+                    <div class="link-icon">🔒</div>
+                    <strong>隱私政策</strong>
+                </a>
+                <a href="terms.html" class="link-card">
+                    <div class="link-icon">📄</div>
+                    <strong>服務條款</strong>
+                </a>
+            </div>
+
+            <div class="contact">
+                <h2>📧 聯繫我們</h2>
+                <p>如有任何問題或建議，歡迎聯繫我們：</p>
+                <div class="contact-info">
+                    <strong>Email:</strong> contact@kainuotech.com
+                </div>
+                <p style="margin-top: 15px; font-size: 0.9em;">我們會在24-48小時內回復您的郵件</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Mood Balloon 心願球. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Hide all sections
+            document.querySelectorAll('.language-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected section
+            document.getElementById(lang).classList.add('active');
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
