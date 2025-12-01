@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Mood Balloon 心願球</title>
+    <title>Privacy Policy - Mood Balloon</title>
     <style>
         * {
             margin: 0;
@@ -35,7 +35,7 @@
             border-bottom: 3px solid #FF6B9D;
         }
 
-        h1 {
+        .header-title {
             color: #FF6B9D;
             font-size: 2.5em;
             margin-bottom: 10px;
@@ -150,7 +150,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Privacy Policy / 隐私政策</h1>
+            <h1 class="header-title" id="header-title">Privacy Policy</h1>
             <div class="lang-nav">
                 <button class="lang-btn active" onclick="switchLang('en')">English</button>
                 <button class="lang-btn" onclick="switchLang('zh-hant')">繁體中文</button>
@@ -420,6 +420,20 @@
 
             // Add active class to clicked button
             event.target.classList.add('active');
+
+            // Update header based on language
+            const headerTitle = document.getElementById('header-title');
+
+            if (lang === 'en') {
+                headerTitle.textContent = 'Privacy Policy';
+                document.title = 'Privacy Policy - Mood Balloon';
+            } else if (lang === 'zh-hant') {
+                headerTitle.textContent = '隱私政策';
+                document.title = '隱私政策 - 心願球';
+            } else if (lang === 'zh-hans') {
+                headerTitle.textContent = '隐私政策';
+                document.title = '隐私政策 - 心愿球';
+            }
 
             // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
