@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & Help - Mood Balloon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #FFF5F7 0%, #FFE8EC 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(255, 107, 157, 0.15);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #FF6B9D;
+        }
+
+        .header-title {
+            color: #FF6B9D;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .lang-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .lang-btn {
+            padding: 10px 20px;
+            border: 2px solid #FF6B9D;
+            background: white;
+            color: #FF6B9D;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background: #FF6B9D;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .lang-btn.active {
+            background: #FF6B9D;
+            color: white;
+        }
+
+        .language-section {
+            display: none;
+        }
+
+        .language-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #FF6B9D;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #FF8AAE;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #666;
+            font-size: 1.1em;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #FF6B9D;
+        }
+
+        .feature-box {
+            background: #FFF5F7;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #FF6B9D;
+        }
+
+        .contact {
+            background: #FFE8EC;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-email {
+            color: #FF6B9D;
+            font-weight: 600;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #FAFAFA;
+            border-radius: 8px;
+        }
+
+        .faq-question {
+            color: #FF6B9D;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .nav-links {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #FFE8EC;
+        }
+
+        .nav-link {
+            color: #FF6B9D;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #FFE8EC;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="header-title" id="header-title">Support & Help</h1>
+            <div class="lang-nav">
+                <button class="lang-btn active" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" onclick="switchLang('zh-hant')">繁體中文</button>
+                <button class="lang-btn" onclick="switchLang('zh-hans')">简体中文</button>
+            </div>
+        </header>
+
+        <!-- English Version -->
+        <div id="en" class="language-section active">
+            <h2>Welcome to Mood Balloon Support</h2>
+            <p>We're here to help you get the most out of Mood Balloon. Below you'll find guides, answers to common questions, and ways to contact us.</p>
+
+            <h3>Getting Started</h3>
+
+            <div class="feature-box">
+                <h4>🎈 Emotion Tracking</h4>
+                <p><strong>How to record your emotions:</strong></p>
+                <ul>
+                    <li>Tap the "+" button on the home screen</li>
+                    <li>Select your current emotion from the emotion wheel</li>
+                    <li>Add details about the situation (optional)</li>
+                    <li>Save your record</li>
+                    <li>View your history in the Calendar tab</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h4>💬 AI Chat</h4>
+                <p><strong>How to use emotional support chat:</strong></p>
+                <ul>
+                    <li>Navigate to the "Spiritual Chat" tab</li>
+                    <li>Start a new conversation or continue an existing one</li>
+                    <li>Share your feelings and thoughts freely</li>
+                    <li>The AI provides empathetic responses and reflections</li>
+                    <li>Note: This is a support tool, not a crisis service</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h4>📊 Psychological Assessments</h4>
+                <p><strong>How to complete assessments:</strong></p>
+                <ul>
+                    <li>Go to the Assessment tab</li>
+                    <li>Choose an assessment (Depression, Anxiety, or Personality)</li>
+                    <li>Answer all questions honestly</li>
+                    <li>Review your results and personalized recommendations</li>
+                    <li>Results are for self-awareness only, not clinical diagnosis</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h4>🧘 Mindfulness & Meditation</h4>
+                <p><strong>How to practice mindfulness:</strong></p>
+                <ul>
+                    <li>Access the Mindfulness tab</li>
+                    <li>Choose a meditation session (Breathing or Body Scan)</li>
+                    <li>Find a quiet, comfortable place</li>
+                    <li>Follow the guided audio instructions</li>
+                    <li>Track your practice progress over time</li>
+                </ul>
+            </div>
+
+            <h3>Frequently Asked Questions</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How do I create an account?</div>
+                <p>A: You can sign in with Apple ID for the fastest setup. Alternatively, you can use guest mode to try the app with local-only data storage.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Is my data private and secure?</div>
+                <p>A: Yes! All your data is encrypted and stored securely. Local data stays on your device, and cloud data (if you create an account) is protected with strict access controls. We never sell your personal information.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I delete my account and data?</div>
+                <p>A: Absolutely. Go to Settings → Delete Account. This will permanently remove all your data within 30 days. You can also export your data before deletion.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Does the app work offline?</div>
+                <p>A: Most features work offline, including emotion tracking, viewing history, and assessments. The AI chat feature requires an internet connection.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How do I change the language?</div>
+                <p>A: Go to Settings → Language. Mood Balloon supports English, Traditional Chinese, and Simplified Chinese.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Is this app a replacement for therapy?</div>
+                <p>A: No. Mood Balloon is designed for self-awareness and emotional wellness support. It is NOT a substitute for professional medical advice, diagnosis, or treatment. If you're experiencing a mental health crisis, please contact local emergency services or a mental health professional.</p>
+            </div>
+
+            <h3>Troubleshooting</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">Problem: App crashes or freezes</div>
+                <p>Solution: Try restarting the app. If the problem persists, restart your device. Make sure you have the latest version of the app installed.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Problem: Can't sign in with Apple ID</div>
+                <p>Solution: Ensure you're signed in to iCloud on your device. Check your internet connection. Try signing out of iCloud and signing back in.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Problem: Data not syncing</div>
+                <p>Solution: Check your internet connection. Make sure you're signed in to your account. Try logging out and logging back in.</p>
+            </div>
+
+            <h3>Contact Us</h3>
+            <div class="contact">
+                <p>Still need help? We're here for you!</p>
+                <p>Email us at: <a href="mailto:contact@kainuotech.com" class="contact-email">contact@kainuotech.com</a></p>
+                <p style="margin-top: 10px; font-size: 0.9em; color: #666;">We typically respond within 24-48 hours.</p>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="privacy.html" class="nav-link">Privacy Policy</a>
+                <a href="terms.html" class="nav-link">Terms of Service</a>
+            </div>
+        </div>
+
+        <!-- Traditional Chinese Version -->
+        <div id="zh-hant" class="language-section">
+            <h2>歡迎來到心願球技術支持</h2>
+            <p>我們致力於幫助您充分利用心願球。以下您可以找到使用指南、常見問題解答以及聯繫我們的方式。</p>
+
+            <h3>入門指南</h3>
+
+            <div class="feature-box">
+                <h4>🎈 情緒追蹤</h4>
+                <p><strong>如何記錄您的情緒：</strong></p>
+                <ul>
+                    <li>點擊主畫面上的「+」按鈕</li>
+                    <li>從情緒輪盤中選擇您目前的情緒</li>
+                    <li>添加情境詳情（可選）</li>
+                    <li>保存您的記錄</li>
+                    <li>在日曆標籤中查看您的歷史記錄</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h4>💬 AI 聊天</h4>
+                <p><strong>如何使用情緒支持聊天：</strong></p>
+                <ul>
+                    <li>進入「心靈聊天」標籤</li>
+                    <li>開始新對話或繼續現有對話</li>
+                    <li>自由分享您的感受和想法</li>
+                    <li>AI 提供富有同理心的回應和反思</li>
+                    <li>注意：這是一個支持工具，不是危機干預服務</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h4>📊 心理測評</h4>
+                <p><strong>如何完成測評：</strong></p>
+                <ul>
+                    <li>進入測評標籤</li>
+                    <li>選擇測評（抑鬱、焦慮或人格）</li>
+                    <li>誠實回答所有問題</li>
+                    <li>查看結果和個人化建議</li>
+                    <li>結果僅供自我認識參考，不是臨床診斷</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h4>🧘 正念與冥想</h4>
+                <p><strong>如何練習正念：</strong></p>
+                <ul>
+                    <li>進入正念標籤</li>
+                    <li>選擇冥想課程（呼吸或身體掃描）</li>
+                    <li>找一個安靜、舒適的地方</li>
+                    <li>跟隨引導音頻指示</li>
+                    <li>追蹤您的練習進度</li>
+                </ul>
+            </div>
+
+            <h3>常見問題</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">問：如何創建帳號？</div>
+                <p>答：您可以使用 Apple ID 登入以獲得最快的設置。或者，您可以使用訪客模式嘗試應用程式，數據僅儲存在本地。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">問：我的資料是否私密和安全？</div>
+                <p>答：是的！您的所有資料都經過加密並安全儲存。本地資料保留在您的裝置上，雲端資料（如果您創建帳號）受到嚴格的存取控制保護。我們絕不會出售您的個人資訊。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">問：我可以刪除我的帳號和資料嗎？</div>
+                <p>答：當然可以。進入設定 → 刪除帳號。這將在 30 天內永久刪除您的所有資料。您也可以在刪除前匯出資料。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">問：應用程式可以離線使用嗎？</div>
+                <p>答：大多數功能可以離線使用，包括情緒追蹤、查看歷史記錄和測評。AI 聊天功能需要網絡連接。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">問：如何更改語言？</div>
+                <p>答：進入設定 → 語言。心願球支援英文、繁體中文和簡體中文。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">問：此應用程式可以替代治療嗎？</div>
+                <p>答：不可以。心願球專為自我認識和情緒健康支持而設計。它不能替代專業醫療建議、診斷或治療。如果您正經歷心理健康危機，請聯繫當地緊急服務或心理健康專業人士。</p>
+            </div>
+
+            <h3>故障排除</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">問題：應用程式崩潰或凍結</div>
+                <p>解決方案：嘗試重啟應用程式。如果問題持續存在，請重啟您的裝置。確保您已安裝最新版本的應用程式。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">問題：無法使用 Apple ID 登入</div>
+                <p>解決方案：確保您已在裝置上登入 iCloud。檢查您的網絡連接。嘗試登出 iCloud 再重新登入。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">問題：資料未同步</div>
+                <p>解決方案：檢查您的網絡連接。確保您已登入帳號。嘗試登出再重新登入。</p>
+            </div>
+
+            <h3>聯繫我們</h3>
+            <div class="contact">
+                <p>仍需幫助？我們隨時為您服務！</p>
+                <p>電子郵件：<a href="mailto:contact@kainuotech.com" class="contact-email">contact@kainuotech.com</a></p>
+                <p style="margin-top: 10px; font-size: 0.9em; color: #666;">我們通常在 24-48 小時內回覆。</p>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">首頁</a>
+                <a href="privacy.html" class="nav-link">隱私政策</a>
+                <a href="terms.html" class="nav-link">服務條款</a>
+            </div>
+        </div>
+
+        <!-- Simplified Chinese Version -->
+        <div id="zh-hans" class="language-section">
+            <h2>欢迎来到心愿球技术支持</h2>
+            <p>我们致力于帮助您充分利用心愿球。以下您可以找到使用指南、常见问题解答以及联系我们的方式。</p>
+
+            <h3>入门指南</h3>
+
+            <div class="feature-box">
+                <h4>🎈 情绪追踪</h4>
+                <p><strong>如何记录您的情绪：</strong></p>
+                <ul>
+                    <li>点击主画面上的「+」按钮</li>
+                    <li>从情绪轮盘中选择您目前的情绪</li>
+                    <li>添加情境详情（可选）</li>
+                    <li>保存您的记录</li>
+                    <li>在日历标签中查看您的历史记录</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h4>💬 AI 聊天</h4>
+                <p><strong>如何使用情绪支持聊天：</strong></p>
+                <ul>
+                    <li>进入「心灵聊天」标签</li>
+                    <li>开始新对话或继续现有对话</li>
+                    <li>自由分享您的感受和想法</li>
+                    <li>AI 提供富有同理心的回应和反思</li>
+                    <li>注意：这是一个支持工具，不是危机干预服务</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h4>📊 心理测评</h4>
+                <p><strong>如何完成测评：</strong></p>
+                <ul>
+                    <li>进入测评标签</li>
+                    <li>选择测评（抑郁、焦虑或人格）</li>
+                    <li>诚实回答所有问题</li>
+                    <li>查看结果和个性化建议</li>
+                    <li>结果仅供自我认识参考，不是临床诊断</li>
+                </ul>
+            </div>
+
+            <div class="feature-box">
+                <h4>🧘 正念与冥想</h4>
+                <p><strong>如何练习正念：</strong></p>
+                <ul>
+                    <li>进入正念标签</li>
+                    <li>选择冥想课程（呼吸或身体扫描）</li>
+                    <li>找一个安静、舒适的地方</li>
+                    <li>跟随引导音频指示</li>
+                    <li>追踪您的练习进度</li>
+                </ul>
+            </div>
+
+            <h3>常见问题</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">问：如何创建账号？</div>
+                <p>答：您可以使用 Apple ID 登录以获得最快的设置。或者，您可以使用访客模式尝试应用程序，数据仅存储在本地。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">问：我的数据是否私密和安全？</div>
+                <p>答：是的！您的所有数据都经过加密并安全存储。本地数据保留在您的设备上，云端数据（如果您创建账号）受到严格的访问控制保护。我们绝不会出售您的个人信息。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">问：我可以删除我的账号和数据吗？</div>
+                <p>答：当然可以。进入设置 → 删除账号。这将在 30 天内永久删除您的所有数据。您也可以在删除前导出数据。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">问：应用程序可以离线使用吗？</div>
+                <p>答：大多数功能可以离线使用，包括情绪追踪、查看历史记录和测评。AI 聊天功能需要网络连接。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">问：如何更改语言？</div>
+                <p>答：进入设置 → 语言。心愿球支持英文、繁体中文和简体中文。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">问：此应用程序可以替代治疗吗？</div>
+                <p>答：不可以。心愿球专为自我认识和情绪健康支持而设计。它不能替代专业医疗建议、诊断或治疗。如果您正经历心理健康危机，请联系当地紧急服务或心理健康专业人士。</p>
+            </div>
+
+            <h3>故障排除</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">问题：应用程序崩溃或冻结</div>
+                <p>解决方案：尝试重启应用程序。如果问题持续存在，请重启您的设备。确保您已安装最新版本的应用程序。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">问题：无法使用 Apple ID 登录</div>
+                <p>解决方案：确保您已在设备上登录 iCloud。检查您的网络连接。尝试登出 iCloud 再重新登录。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">问题：数据未同步</div>
+                <p>解决方案：检查您的网络连接。确保您已登录账号。尝试登出再重新登录。</p>
+            </div>
+
+            <h3>联系我们</h3>
+            <div class="contact">
+                <p>仍需帮助？我们随时为您服务！</p>
+                <p>电子邮件：<a href="mailto:contact@kainuotech.com" class="contact-email">contact@kainuotech.com</a></p>
+                <p style="margin-top: 10px; font-size: 0.9em; color: #666;">我们通常在 24-48 小时内回复。</p>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="privacy.html" class="nav-link">隐私政策</a>
+                <a href="terms.html" class="nav-link">服务条款</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Mood Balloon 心願球. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Hide all sections
+            document.querySelectorAll('.language-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected section
+            document.getElementById(lang).classList.add('active');
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+
+            // Update header based on language
+            const headerTitle = document.getElementById('header-title');
+
+            if (lang === 'en') {
+                headerTitle.textContent = 'Support & Help';
+                document.title = 'Support & Help - Mood Balloon';
+            } else if (lang === 'zh-hant') {
+                headerTitle.textContent = '技術支持與幫助';
+                document.title = '技術支持與幫助 - 心願球';
+            } else if (lang === 'zh-hans') {
+                headerTitle.textContent = '技术支持与帮助';
+                document.title = '技术支持与帮助 - 心愿球';
+            }
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
