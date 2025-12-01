@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Mood Balloon 心願球</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #FFF5F7 0%, #FFE8EC 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(255, 107, 157, 0.15);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #FF6B9D;
+        }
+
+        h1 {
+            color: #FF6B9D;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .lang-nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .lang-btn {
+            padding: 10px 20px;
+            border: 2px solid #FF6B9D;
+            background: white;
+            color: #FF6B9D;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background: #FF6B9D;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .lang-btn.active {
+            background: #FF6B9D;
+            color: white;
+        }
+
+        .language-section {
+            display: none;
+        }
+
+        .language-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #FF6B9D;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #FF8AAE;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #666;
+            font-size: 1.1em;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #FF6B9D;
+        }
+
+        .warning {
+            background: #FFF5F7;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #FF6B9D;
+        }
+
+        .crisis-resources {
+            background: #FFE8EC;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .contact {
+            background: #FFF5F7;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #FF6B9D;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #FFE8EC;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Terms of Service / 服务条款</h1>
+            <div class="lang-nav">
+                <button class="lang-btn active" onclick="switchLang('en')">English</button>
+                <button class="lang-btn" onclick="switchLang('zh-hant')">繁體中文</button>
+                <button class="lang-btn" onclick="switchLang('zh-hans')">简体中文</button>
+            </div>
+        </header>
+
+        <!-- English Version -->
+        <div id="en" class="language-section active">
+            <h2>English Version</h2>
+
+            <h3>1. Acceptance of Terms</h3>
+            <p>By downloading, installing, or using Mood Balloon ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+
+            <h3>2. Description of Service</h3>
+            <p>Mood Balloon is a mental health and emotional wellness application that provides:</p>
+            <ul>
+                <li>Emotion tracking and journaling</li>
+                <li>AI-powered emotional support conversations</li>
+                <li>Psychological assessments (PHQ-9, GAD-7, Big Five Personality Test)</li>
+                <li>Mindfulness meditation guidance</li>
+            </ul>
+
+            <h3>3. Medical Disclaimer</h3>
+            <div class="warning">
+                <p><strong>IMPORTANT: Mood Balloon is NOT a substitute for professional medical advice, diagnosis, or treatment.</strong></p>
+                <ul>
+                    <li>The App is designed for self-awareness and emotional wellness support only</li>
+                    <li>Assessment results are for informational purposes and are not clinical diagnoses</li>
+                    <li>Always seek the advice of qualified mental health professionals for medical conditions</li>
+                    <li>In case of emergency or crisis, contact local emergency services immediately</li>
+                </ul>
+
+                <div class="crisis-resources">
+                    <p><strong>Crisis Resources:</strong></p>
+                    <ul>
+                        <li>Hong Kong: Suicide Prevention Services (2382 0000)</li>
+                        <li>Samaritan Befrienders Hong Kong (2389 2222)</li>
+                        <li>International: Contact your local emergency services</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>4. User Accounts and Responsibilities</h3>
+
+            <h4>Account Creation</h4>
+            <ul>
+                <li>You must be at least 13 years old to use the App</li>
+                <li>You are responsible for maintaining the confidentiality of your account</li>
+                <li>You agree to provide accurate and complete information</li>
+            </ul>
+
+            <h4>Prohibited Uses</h4>
+            <p>You agree NOT to:</p>
+            <ul>
+                <li>Use the App for any illegal purposes</li>
+                <li>Attempt to gain unauthorized access to the App or its systems</li>
+                <li>Upload malicious code, viruses, or harmful content</li>
+                <li>Harass, abuse, or harm others</li>
+                <li>Impersonate any person or entity</li>
+            </ul>
+
+            <h3>5. Intellectual Property Rights</h3>
+            <ul>
+                <li>Mood Balloon and all related content, features, and functionality are owned by us</li>
+                <li>You retain ownership of the emotional records and content you create</li>
+                <li>By using the App, you grant us a limited license to store and process your content for service provision</li>
+            </ul>
+
+            <h3>6. Subscription and Payment Terms</h3>
+
+            <h4>Free Features</h4>
+            <ul>
+                <li>Basic emotion tracking</li>
+                <li>Calendar view</li>
+                <li>Limited AI conversations</li>
+            </ul>
+
+            <h4>Premium Features (Future)</h4>
+            <p>Premium subscription may include:</p>
+            <ul>
+                <li>Unlimited AI conversations</li>
+                <li>Advanced analytics and insights</li>
+                <li>Export functionality</li>
+            </ul>
+
+            <h4>Payment</h4>
+            <ul>
+                <li>Subscriptions are billed through the Apple App Store</li>
+                <li>Prices are in the currency of your App Store region</li>
+                <li>Subscriptions auto-renew unless cancelled 24 hours before renewal</li>
+                <li>Refunds are subject to Apple's refund policy</li>
+            </ul>
+
+            <h3>7. Data Privacy and Security</h3>
+            <ul>
+                <li>Your use of the App is also governed by our Privacy Policy</li>
+                <li>We use industry-standard security measures to protect your data</li>
+                <li>We cannot guarantee absolute security against unauthorized access</li>
+                <li>You are responsible for maintaining the security of your device</li>
+            </ul>
+
+            <h3>8. Disclaimers and Limitations of Liability</h3>
+
+            <h4>"AS IS" Service</h4>
+            <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED.</p>
+
+            <h4>Limitation of Liability</h4>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR:</p>
+            <ul>
+                <li>Any indirect, incidental, special, or consequential damages</li>
+                <li>Loss of data, profits, or business opportunities</li>
+                <li>Personal injury or emotional distress</li>
+            </ul>
+            <p>TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP IN THE PAST 12 MONTHS.</p>
+
+            <h3>9. Changes to Service and Terms</h3>
+            <p>We reserve the right to:</p>
+            <ul>
+                <li>Modify or discontinue the App at any time</li>
+                <li>Update these Terms with notice</li>
+                <li>Change pricing for premium features with advance notice</li>
+            </ul>
+            <p>Significant changes will be communicated via in-app notification or email.</p>
+
+            <h3>10. Termination</h3>
+
+            <h4>By You</h4>
+            <ul>
+                <li>You may delete your account at any time through the App settings</li>
+                <li>All your data will be permanently deleted within 30 days</li>
+            </ul>
+
+            <h4>By Us</h4>
+            <p>We may suspend or terminate your account if:</p>
+            <ul>
+                <li>You violate these Terms</li>
+                <li>You engage in fraudulent activities</li>
+                <li>Required by law</li>
+            </ul>
+
+            <h3>11. Governing Law</h3>
+            <p>These Terms are governed by the laws of Hong Kong SAR, without regard to conflict of law provisions.</p>
+
+            <h3>12. Contact Information</h3>
+            <div class="contact">
+                <p>For questions about these Terms, please contact:</p>
+                <p><strong>Email</strong>: contact@kainuotech.com</p>
+            </div>
+        </div>
+
+        <!-- Traditional Chinese Version -->
+        <div id="zh-hant" class="language-section">
+            <h2>繁體中文版本</h2>
+
+            <h3>1. 接受條款</h3>
+            <p>下載、安裝或使用心願球（「本應用」）即表示您同意受這些服務條款（「條款」）的約束。如果您不同意這些條款,請勿使用本應用。</p>
+
+            <h3>2. 服務描述</h3>
+            <p>心願球是一款心理健康和情緒健康應用程式,提供：</p>
+            <ul>
+                <li>情緒追蹤和日記</li>
+                <li>AI驅動的情緒支持對話</li>
+                <li>心理測評（PHQ-9、GAD-7、大五人格測試）</li>
+                <li>正念冥想指導</li>
+            </ul>
+
+            <h3>3. 醫療免責聲明</h3>
+            <div class="warning">
+                <p><strong>重要提示：心願球不能替代專業醫療建議、診斷或治療。</strong></p>
+                <ul>
+                    <li>本應用僅用於自我認識和情緒健康支持</li>
+                    <li>測評結果僅供參考,不是臨床診斷</li>
+                    <li>如有醫療問題,請務必尋求合資格心理健康專業人士的建議</li>
+                    <li>緊急情況或危機時,請立即聯絡當地緊急服務</li>
+                </ul>
+
+                <div class="crisis-resources">
+                    <p><strong>危機資源：</strong></p>
+                    <ul>
+                        <li>香港：防止自殺服務 (2382 0000)</li>
+                        <li>香港撒瑪利亞防止自殺會 (2389 2222)</li>
+                        <li>國際：聯絡當地緊急服務</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>4. 用戶帳號與責任</h3>
+
+            <h4>帳號創建</h4>
+            <ul>
+                <li>您必須年滿13歲才能使用本應用</li>
+                <li>您有責任維護帳號的機密性</li>
+                <li>您同意提供準確和完整的資訊</li>
+            </ul>
+
+            <h4>禁止使用</h4>
+            <p>您同意不會：</p>
+            <ul>
+                <li>將本應用用於任何非法目的</li>
+                <li>嘗試未經授權訪問本應用或其系統</li>
+                <li>上傳惡意代碼、病毒或有害內容</li>
+                <li>騷擾、辱罵或傷害他人</li>
+                <li>冒充任何人或實體</li>
+            </ul>
+
+            <h3>5. 知識產權</h3>
+            <ul>
+                <li>心願球及所有相關內容、功能均由我們擁有</li>
+                <li>您保留您創建的情緒記錄和內容的所有權</li>
+                <li>使用本應用,您授予我們有限許可來儲存和處理您的內容以提供服務</li>
+            </ul>
+
+            <h3>6. 訂閱和付款條款</h3>
+
+            <h4>免費功能</h4>
+            <ul>
+                <li>基本情緒追蹤</li>
+                <li>日曆視圖</li>
+                <li>有限的AI對話</li>
+            </ul>
+
+            <h4>高級功能（未來）</h4>
+            <p>高級訂閱可能包括：</p>
+            <ul>
+                <li>無限AI對話</li>
+                <li>高級分析和見解</li>
+                <li>匯出功能</li>
+            </ul>
+
+            <h4>付款</h4>
+            <ul>
+                <li>訂閱通過Apple App Store計費</li>
+                <li>價格以您的App Store地區貨幣為單位</li>
+                <li>訂閱自動續訂,除非在續訂前24小時取消</li>
+                <li>退款受Apple退款政策約束</li>
+            </ul>
+
+            <h3>7. 資料隱私與安全</h3>
+            <ul>
+                <li>您使用本應用也受我們的隱私政策管轄</li>
+                <li>我們使用行業標準安全措施保護您的資料</li>
+                <li>我們無法保證絕對安全防止未經授權訪問</li>
+                <li>您有責任維護設備的安全</li>
+            </ul>
+
+            <h3>8. 免責聲明和責任限制</h3>
+
+            <h4>「按原樣」服務</h4>
+            <p>本應用「按原樣」和「按可用性」提供,不提供任何明示或暗示的保證。</p>
+
+            <h4>責任限制</h4>
+            <p>在法律允許的最大範圍內,我們不對以下內容承擔責任：</p>
+            <ul>
+                <li>任何間接、偶然、特殊或後果性損害</li>
+                <li>資料、利潤或商業機會的損失</li>
+                <li>人身傷害或情緒困擾</li>
+            </ul>
+            <p>總責任不得超過您在過去12個月內為本應用支付的金額。</p>
+
+            <h3>9. 服務和條款變更</h3>
+            <p>我們保留以下權利：</p>
+            <ul>
+                <li>隨時修改或終止本應用</li>
+                <li>更新這些條款並通知</li>
+                <li>提前通知更改高級功能的定價</li>
+            </ul>
+            <p>重大變更將通過應用內通知或電子郵件傳達。</p>
+
+            <h3>10. 終止</h3>
+
+            <h4>由您</h4>
+            <ul>
+                <li>您可以隨時通過應用設定刪除您的帳號</li>
+                <li>您的所有資料將在30天內永久刪除</li>
+            </ul>
+
+            <h4>由我們</h4>
+            <p>如果出現以下情況,我們可能會暫停或終止您的帳號：</p>
+            <ul>
+                <li>您違反這些條款</li>
+                <li>您參與欺詐活動</li>
+                <li>法律要求</li>
+            </ul>
+
+            <h3>11. 管轄法律</h3>
+            <p>這些條款受香港特別行政區法律管轄,不考慮法律衝突條款。</p>
+
+            <h3>12. 聯絡資訊</h3>
+            <div class="contact">
+                <p>如對這些條款有疑問,請聯絡：</p>
+                <p><strong>電子郵件</strong>：contact@kainuotech.com</p>
+            </div>
+        </div>
+
+        <!-- Simplified Chinese Version -->
+        <div id="zh-hans" class="language-section">
+            <h2>简体中文版本</h2>
+
+            <h3>1. 接受条款</h3>
+            <p>下载、安装或使用心愿球（"本应用"）即表示您同意受这些服务条款（"条款"）的约束。如果您不同意这些条款,请勿使用本应用。</p>
+
+            <h3>2. 服务描述</h3>
+            <p>心愿球是一款心理健康和情绪健康应用程序,提供：</p>
+            <ul>
+                <li>情绪追踪和日记</li>
+                <li>AI驱动的情绪支持对话</li>
+                <li>心理测评（PHQ-9、GAD-7、大五人格测试）</li>
+                <li>正念冥想指导</li>
+            </ul>
+
+            <h3>3. 医疗免责声明</h3>
+            <div class="warning">
+                <p><strong>重要提示：心愿球不能替代专业医疗建议、诊断或治疗。</strong></p>
+                <ul>
+                    <li>本应用仅用于自我认识和情绪健康支持</li>
+                    <li>测评结果仅供参考,不是临床诊断</li>
+                    <li>如有医疗问题,请务必寻求合资格心理健康专业人士的建议</li>
+                    <li>紧急情况或危机时,请立即联系当地紧急服务</li>
+                </ul>
+
+                <div class="crisis-resources">
+                    <p><strong>危机资源：</strong></p>
+                    <ul>
+                        <li>香港：防止自杀服务 (2382 0000)</li>
+                        <li>香港撒玛利亚防止自杀会 (2389 2222)</li>
+                        <li>国际：联系当地紧急服务</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>4. 用户账号与责任</h3>
+
+            <h4>账号创建</h4>
+            <ul>
+                <li>您必须年满13岁才能使用本应用</li>
+                <li>您有责任维护账号的机密性</li>
+                <li>您同意提供准确和完整的信息</li>
+            </ul>
+
+            <h4>禁止使用</h4>
+            <p>您同意不会：</p>
+            <ul>
+                <li>将本应用用于任何非法目的</li>
+                <li>尝试未经授权访问本应用或其系统</li>
+                <li>上传恶意代码、病毒或有害内容</li>
+                <li>骚扰、辱骂或伤害他人</li>
+                <li>冒充任何人或实体</li>
+            </ul>
+
+            <h3>5. 知识产权</h3>
+            <ul>
+                <li>心愿球及所有相关内容、功能均由我们拥有</li>
+                <li>您保留您创建的情绪记录和内容的所有权</li>
+                <li>使用本应用,您授予我们有限许可来存储和处理您的内容以提供服务</li>
+            </ul>
+
+            <h3>6. 订阅和付款条款</h3>
+
+            <h4>免费功能</h4>
+            <ul>
+                <li>基本情绪追踪</li>
+                <li>日历视图</li>
+                <li>有限的AI对话</li>
+            </ul>
+
+            <h4>高级功能（未来）</h4>
+            <p>高级订阅可能包括：</p>
+            <ul>
+                <li>无限AI对话</li>
+                <li>高级分析和见解</li>
+                <li>导出功能</li>
+            </ul>
+
+            <h4>付款</h4>
+            <ul>
+                <li>订阅通过Apple App Store计费</li>
+                <li>价格以您的App Store地区货币为单位</li>
+                <li>订阅自动续订,除非在续订前24小时取消</li>
+                <li>退款受Apple退款政策约束</li>
+            </ul>
+
+            <h3>7. 数据隐私与安全</h3>
+            <ul>
+                <li>您使用本应用也受我们的隐私政策管辖</li>
+                <li>我们使用行业标准安全措施保护您的数据</li>
+                <li>我们无法保证绝对安全防止未经授权访问</li>
+                <li>您有责任维护设备的安全</li>
+            </ul>
+
+            <h3>8. 免责声明和责任限制</h3>
+
+            <h4>"按原样"服务</h4>
+            <p>本应用"按原样"和"按可用性"提供,不提供任何明示或暗示的保证。</p>
+
+            <h4>责任限制</h4>
+            <p>在法律允许的最大范围内,我们不对以下内容承担责任：</p>
+            <ul>
+                <li>任何间接、偶然、特殊或后果性损害</li>
+                <li>数据、利润或商业机会的损失</li>
+                <li>人身伤害或情绪困扰</li>
+            </ul>
+            <p>总责任不得超过您在过去12个月内为本应用支付的金额。</p>
+
+            <h3>9. 服务和条款变更</h3>
+            <p>我们保留以下权利：</p>
+            <ul>
+                <li>随时修改或终止本应用</li>
+                <li>更新这些条款并通知</li>
+                <li>提前通知更改高级功能的定价</li>
+            </ul>
+            <p>重大变更将通过应用内通知或电子邮件传达。</p>
+
+            <h3>10. 终止</h3>
+
+            <h4>由您</h4>
+            <ul>
+                <li>您可以随时通过应用设置删除您的账号</li>
+                <li>您的所有数据将在30天内永久删除</li>
+            </ul>
+
+            <h4>由我们</h4>
+            <p>如果出现以下情况,我们可能会暂停或终止您的账号：</p>
+            <ul>
+                <li>您违反这些条款</li>
+                <li>您参与欺诈活动</li>
+                <li>法律要求</li>
+            </ul>
+
+            <h3>11. 管辖法律</h3>
+            <p>这些条款受香港特别行政区法律管辖,不考虑法律冲突条款。</p>
+
+            <h3>12. 联系信息</h3>
+            <div class="contact">
+                <p>如对这些条款有疑问,请联系：</p>
+                <p><strong>电子邮件</strong>：contact@kainuotech.com</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Mood Balloon 心願球. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            // Hide all sections
+            document.querySelectorAll('.language-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected section
+            document.getElementById(lang).classList.add('active');
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
