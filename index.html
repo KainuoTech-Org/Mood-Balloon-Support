@@ -40,13 +40,13 @@
             margin-bottom: 20px;
         }
 
-        h1 {
+        .header-title {
             color: #FF6B9D;
             font-size: 2.5em;
             margin-bottom: 10px;
         }
 
-        .subtitle {
+        .header-subtitle {
             color: #999;
             font-size: 1.2em;
         }
@@ -190,8 +190,8 @@
     <div class="container">
         <header>
             <div class="app-icon">🎈</div>
-            <h1>Mood Balloon 心願球</h1>
-            <p class="subtitle">Technical Support 技術支持</p>
+            <h1 class="header-title" id="header-title">Mood Balloon</h1>
+            <p class="header-subtitle" id="header-subtitle">Technical Support</p>
             <div class="lang-nav">
                 <button class="lang-btn active" onclick="switchLang('en')">English</button>
                 <button class="lang-btn" onclick="switchLang('zh-hant')">繁體中文</button>
@@ -336,6 +336,20 @@
 
             // Add active class to clicked button
             event.target.classList.add('active');
+
+            // Update header based on language
+            const headerTitle = document.getElementById('header-title');
+            const headerSubtitle = document.getElementById('header-subtitle');
+
+            if (lang === 'en') {
+                headerTitle.textContent = 'Mood Balloon';
+                headerSubtitle.textContent = 'Technical Support';
+                document.title = 'Mood Balloon - Support & Help';
+            } else if (lang === 'zh-hant') {
+                headerTitle.textContent = '心願球';
+                headerSubtitle.textContent = '技術支持';
+                document.title = '心願球 - 技術支持';
+            }
 
             // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
